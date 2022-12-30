@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">JalarCom</string>
+    <string name="label_schedule">Jadwal</string>
+    <string name="label_growth">Panen</string>
+    <string name="label_shipment">Pengiriman</string>
+    <string name="label_explore">Jelajahi</string>
+
+
+</resources>
