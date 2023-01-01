@@ -18,18 +18,18 @@ import org.ferdyhaspin.jalarcom.ui.theme.Purple500
  * Created by ferdyhaspin on 31/12/22.
  */
 
-
 @Composable
 fun BottomFeed(
     feed: Feed,
-    modifier: Modifier = Modifier
+    modifier: Modifier = Modifier,
+    showDetail: Boolean = false
 ) {
     Row(modifier = modifier.padding(20.dp)) {
         Column(modifier = modifier.weight(1F)) {
             Text(
                 text = feed.caption,
                 fontSize = 14.sp,
-                maxLines = 2,
+                maxLines = if (showDetail) Int.MAX_VALUE else 1,
                 overflow = TextOverflow.Ellipsis,
                 modifier = Modifier
                     .fillMaxWidth()

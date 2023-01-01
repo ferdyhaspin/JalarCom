@@ -1,25 +1,21 @@
 package org.ferdyhaspin.jalarcom.ui.screen.feed
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Text
+import androidx.compose.material.Divider
 import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
@@ -34,6 +30,7 @@ import org.ferdyhaspin.jalarcom.ui.ViewModelFactory
 import org.ferdyhaspin.jalarcom.ui.common.UiState
 import org.ferdyhaspin.jalarcom.ui.component.BottomFeed
 import org.ferdyhaspin.jalarcom.ui.component.SectionItem
+import org.ferdyhaspin.jalarcom.ui.component.TopFeed
 import org.ferdyhaspin.jalarcom.ui.navigation.Screen
 import org.ferdyhaspin.jalarcom.ui.theme.JalarComTheme
 
@@ -123,28 +120,11 @@ fun FeedContent(
                 .heightIn(200.dp)
                 .wrapContentHeight()
         )
-        BottomFeedContent(feed)
+        TopFeed(feed = feed)
+        Divider()
+        BottomFeed(feed = feed, showDetail = true)
     }
 }
-
-@Composable
-fun BottomFeedContent(
-    feed: Feed,
-    modifier: Modifier = Modifier
-) {
-    Column(modifier = modifier) {
-        Text(
-            text = feed.user.name,
-            fontSize = 15.sp,
-            fontWeight = FontWeight.SemiBold,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 20.dp, start = 20.dp, end = 20.dp)
-        )
-        BottomFeed(feed = feed)
-    }
-}
-
 
 @Composable
 fun FeedContentList(
