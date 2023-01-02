@@ -21,16 +21,31 @@ class Feed(
 ) : Parcelable
 
 object FeedsData {
-    val dummy = Feed(0, "", "", "", "", "", "", "", User(0, "", "", ""))
+    val dummy = Feed(
+        0,
+        "Jual Pisang Mas enak mantap harga murah. Minat hubungi 08232232738237288.",
+        "https://i.postimg.cc/4d8c5qnB/fruit-pisang-emas.jpg",
+        "Sukabumi - Rp10.000/Kg",
+        "1 jam yang lalu",
+        "Penjual",
+        "Salah satu kultivar pisang dari kelompok kultivar ABB. Pisang ini termasuk kelompok pisang olah (plantain) karena tinggi kandungan patinya.",
+        "Ada suatu senyawa yang berfungsi dalam mengobati penyakit batu darah yang diakibatkan adanya luka atau peradangan di dalam paru-paru. Dengan mengkonsumsi jenis pisang kepok ini maka akan membantu dalam mengatasinya.",
+        User(
+            0,
+            "Martin Escobar",
+            "https://i.postimg.cc/cHK9DFWZ/martin.jpg",
+            "Pengepul"
+        )
+    )
 
     val feeds = listOf(
         Feed(
             0,
-            "Jual ubi enak mantap harga murah. Minat hubungi 08232232738237288.",
-            "https://i.postimg.cc/HxPzXX8K/ubi.jpg",
-            "Sukabumi - Rp.2000/Kg",
+            "Jual Pisang Mas enak mantap harga murah. Minat hubungi 08232232738237288.",
+            "https://i.postimg.cc/4d8c5qnB/fruit-pisang-emas.jpg",
+            "Sukabumi - Rp10.000/Kg",
             "1 jam yang lalu",
-            "Beli",
+            "Penjual",
             "Salah satu kultivar pisang dari kelompok kultivar ABB. Pisang ini termasuk kelompok pisang olah (plantain) karena tinggi kandungan patinya.",
             "Ada suatu senyawa yang berfungsi dalam mengobati penyakit batu darah yang diakibatkan adanya luka atau peradangan di dalam paru-paru. Dengan mengkonsumsi jenis pisang kepok ini maka akan membantu dalam mengatasinya.",
             User(
@@ -42,9 +57,9 @@ object FeedsData {
         ),
         Feed(
             1,
-            "Ubi mantap harga murah bisa COD.",
-            "https://i.postimg.cc/8PbHm2vM/ubi2.jpg",
-            "Bogor - Rp.1800/Kg",
+            "Melon segar mantap harga murah bisa COD.",
+            "https://i.postimg.cc/yd7tMQBM/fruit-melon.jpg",
+            "Bogor - Rp18.000/Kg",
             "4 jam yang lalu",
             "Jual",
             "Buah yang masih satu suku dengan semangka atau labu-labuan jenis lain. Buah ini biasa di gunakan sebagai hidangan sebelum makan, di buat jus buah atau di gunakan sebagai campuran es buah. Buah dengan rasa manis yang khas dan daging buah yang lembut akan terasa segar dan nikmat jika di makan di siang hari yang panas.Melon sendiri merupakan tumbuhan satu musim yang tumbuh secara menjalar pada tiang penyangga yang sengaja di sediakan oleh petani buah ketika membudidayakan melon. Tumbuhan buah ini merupakan jenis tumbuhan yang berumah satu, yang mana perkawinan buah ini dapat di lakukan dengan bantuan angin dan sentuhan yang lain.",
@@ -57,26 +72,10 @@ object FeedsData {
             )
         ),
         Feed(
-            2,
-            "Dijual murah ubi mantap. silahkan dibeli brader",
-            "https://i.postimg.cc/jSPR1hsH/ubi3.jpg",
-            "Cianjur - Rp.3000/Kg",
-            "12 jam yang lalu",
-            "Jual",
-            "Buah yang masih satu suku dengan semangka atau labu-labuan jenis lain. Buah ini biasa di gunakan sebagai hidangan sebelum makan, di buat jus buah atau di gunakan sebagai campuran es buah. Buah dengan rasa manis yang khas dan daging buah yang lembut akan terasa segar dan nikmat jika di makan di siang hari yang panas.Melon sendiri merupakan tumbuhan satu musim yang tumbuh secara menjalar pada tiang penyangga yang sengaja di sediakan oleh petani buah ketika membudidayakan melon. Tumbuhan buah ini merupakan jenis tumbuhan yang berumah satu, yang mana perkawinan buah ini dapat di lakukan dengan bantuan angin dan sentuhan yang lain.",
-            "Buah melon mengandung vitamin C yang berguna baik untuk  kesehatan. Perharinya, Anda bisa mengonsumsi satu cangkir melon, yang sama dengan kebutuhan harian vitamin C Anda. Vitamin C berguna baik untuk tubuh, karena bisa meningkatkan sistem kekebalan tubuh dan membantu mencegah penyakit serta infeksi yang menyerang.",
-            User(
-                2,
-                "Cecep Subagja",
-                "https://i.postimg.cc/7PRDYRh1/cecep.jpg",
-                "Petani"
-            )
-        ),
-        Feed(
             3,
-            "Ubi jalar mantap enak untuk digoreng maupun di rebus. free ongkir.",
-            "https://i.postimg.cc/BvNbhCgh/ubi11.jpg",
-            "Ciawi - Rp.3800/Kg",
+            "Pisang Ambon mantap enak untuk digoreng maupun di rebus. free ongkir.",
+            "https://i.postimg.cc/ZR9st12D/fruit-pisang-ambon.jpg",
+            "Ciawi - Rp13.800/Kg",
             "1 hari yang lalu",
             "Jual",
             "Jenis pisang dengan nama lain pisang cavendish. Pisang Ambon terdiri dari beragam jenis misalnya pisang Ambon lumut, pisang Ambon putih, pisang Ambon kuning, dan sebagainya. Pisang Ambon merupakan hasil perkembangbiakkan genetis dengan kultur jaringan. Pisang Ambon yang umum ditemui memiliki kulit yang halus berwarna hijau atau kuning dengan daging putih dan manis serta tidak berbiji atau berbiji sangat halus. Pisang Ambon berukuran cukup besar ",
@@ -90,13 +89,13 @@ object FeedsData {
         ),
         Feed(
             4,
-            "Jual ubi jalar termurah dibogor.",
-            "https://i.postimg.cc/9X9V0p7v/ubi8.jpg",
-            "Bogor - Rp.4500/Kg",
+            "Jual Semangka enak dan termurah dibogor.",
+            "https://i.postimg.cc/k4Tm53gN/fruit-semangka.jpg",
+            "Bogor - Rp10.000/Kg",
             "2 hari yang lalu",
             "Jual",
-            "Jenis terong yang berbentuk bulat kecil. Terong lalap mudah dibudidayakan di lahan perkebunan, ladang, sawah, perkarangan rumah, dll. Terong lalap banyak dimanfaatkan untuk berbagai kepentingan dengan salah satunya dapat diolah untuk dijadikan aneka kuliner masakan dengan cita rasa yang melezatkan. Terong lalap dapat dimasak untuk dijadikan semur terong, tumis terong, dll.",
-            "adalah menurunkan kadar kolesterol. Umumnya makanan yang mampu untuk menurunkan kadar gula darah juga memiliki kemampuan untuk menurunkan kolesterol. Kondisi kadar gula darah tinggi dapat menyebabkan kadar kolesterol jahat serta trigliserida meningkat.",
+            "Semangka merupakan Tanaman merambat yang berasal dari daerah setengah gurun di Afrika bagian selatan. Tanaman ini masih sekerabat dengan labu-labuan (Cucurbitaceae), melon (Cucumis melo) dan ketimun (Cucumis sativus). Semangka biasa dipanen buahnya untuk dimakan segar atau dibuat jus. Biji semangka yang dikeringkan dan disangrai juga dapat dimakan isinya (kotiledon) sebagai kuaci. Sebagaimana anggota suku ketimun-ketimunan lainnya, habitus tanaman ini merambat namun ia tidak dapat membentuk akar adventif dan tidak dapat memanjat. Jangkauan rambatan dapat mencapai belasan meter.",
+            "Buah semangka mengandung 92% air dan elektrolit yang sangat baik untuk menghidrasi tubuh agar tidak kena dehidrasi. Manfaat semangka juga baik untuk membantu suhu tubuh tetap stabil dalam cuaca panas yang menyengat. Buah ini juga mengandung citruline dan arginine yang sama baiknya untuk kesehatan jantung. Sebuah jurnal yang diterbitkan oleh American Journal of Hypertension menemukan bawah arginine mampu menjaga sirkulasi darah yang dipompa oleh jantung. Arginine pun dapat membantu mengurangi lemak berlebih yang bisa menimbulkan kolesterol hingga serangan jantung mendadak.",
             User(
                 4,
                 "M Ihsan Basuki",
@@ -106,8 +105,8 @@ object FeedsData {
         ),
         Feed(
             5,
-            "Cari ubi jalar harga terbaik diangkut",
-            "https://i.postimg.cc/JnGrpCtn/ubi5.jpg",
+            "Cari Ubi Jalar harga terbaik diangkut",
+            "https://i.postimg.cc/tCgK2MCw/veg-ubi.jpg",
             "Sumedang - Rp.4000/Kg",
             "3 hari yang lalu",
             "Beli",
@@ -122,12 +121,12 @@ object FeedsData {
         ),
         Feed(
             6,
-            "Monggo di liat dulu guys.",
-            "https://i.postimg.cc/FKnmdCGQ/ubi6.jpg",
+            "Pengen cari Daun Pepaya Jepang.",
+            "https://i.postimg.cc/Pq8hKFKT/veg-pepaya.jpg",
             "Cisalopa - Rp.1000/Kg",
             "6 hari yang lalu",
             "Beli",
-            " Tanaman perdu ini berasal dari Semenanjung Yukatan di Meksiko, Amerika Tengah, dan di sana dikenal dengan nama â€œchayaâ€. Di daerah asalnya, tanaman chaya dianggap sangat berharga oleh masyarakat pedesaan dan digunakan untuk makanan, tanaman obat, serta untuk tanaman hias. Chaya telah dikonsumsi oleh orang-orang dari suku Maya sejak zaman pra-Columbus dan hingga kini masih terus dikonsumsi oleh masyarakat modern.\n\n",
+            "Tanaman perdu ini berasal dari Semenanjung Yukatan di Meksiko, Amerika Tengah, dan di sana dikenal dengan nama â€œchayaâ€. Di daerah asalnya, tanaman chaya dianggap sangat berharga oleh masyarakat pedesaan dan digunakan untuk makanan, tanaman obat, serta untuk tanaman hias. Chaya telah dikonsumsi oleh orang-orang dari suku Maya sejak zaman pra-Columbus dan hingga kini masih terus dikonsumsi oleh masyarakat modern.\n\n",
             "Bahkan bila dibandingkan dengan bayam, daun ini jauh lebih bernutrisi: 78% lebih banyak protein, 111% lebih banyak serat, 100% lebih banyak zat besi, dan 242% lebih banyak vitamin C. Melihat kandungan nutrisinya yang tinggi, daun ini pastilah bermanfaat bagi kesehatan tubuh. Salah satunya adalah sebagai penambah darah dan pencegah anemia yang lebih besar jika mengonsumsi daun chaya ini.",
             User(
                 6,
@@ -138,9 +137,9 @@ object FeedsData {
         ),
         Feed(
             7,
-            "Harga murah meriah bisa di COD.",
-            "https://i.postimg.cc/gkvYSDcv/ubi7.jpg",
-            "Cianjur - Rp.3500/Kg",
+            "Jual Labu Harga murah meriah bisa di COD.",
+            "https://i.postimg.cc/MpgJcmw4/veg-labu.jpg",
+            "Cianjur - Rp13.500/Kg",
             "1 minggu yang lalu",
             "Jual",
             "Jenis labu berbentuk 'unik' yang di luar negeri dikenal dengan nama Pumpkin Butternut atau Butternut Squash adalah jenis labu yang kini mulai menjadi tren pangan sehat alami di berbagai negara.\nBerbeda dengan jenis labu lainnya, labu madu memiliki rasa daging buah yang sangat manis sehingga disebut sebagai labu madu, namun meski meiliki rasa yang sangat manis, labu ini memiliki kandungan gula dan kalori yang relatife rendah, sehingga bisa menjadi pangan alternatif yang aman dikonsumsi oleh siapa saja.",
@@ -155,13 +154,13 @@ object FeedsData {
         ),
         Feed(
             8,
-            "Ubi Jalar mantap terenak lansunng dari petani.",
-            "https://i.postimg.cc/YS8BcnTW/ubi4.jpg",
-            "Bogor - Rp.2500/Kg",
+            "Mangga Harum Manis segar mantap terenak lansunng dari petani.",
+            "https://i.postimg.cc/vBBK31G9/fruit-mangga.jpg",
+            "Bogor - Rp5.500/Kg",
             "3 minggu yang lalu",
-            "Beli",
-            "Dalam bahasa Sunda disebut Tangkil, merupakan suatu spesies tanaman berbiji terbuka (Gymnospermae) berbentuk pohon yang berasal dari Asia tropik, melanesia, dan Pasifik Barat. Melinjo dikenal pula dengan nama belinjo, mlinjo (bahasa Jawa), tangkil (bahasa Sunda) atau bago (bahasa Melayu dan bahasa Tagalog), Khalet (Bahasa Kamboja). Melinjo banyak ditanam di pekarangan sebagai peneduh atau pembatas pekarangan dan terutama dimanfaatkan buah dan daunnya.",
-            "Kandungan mangan di dalamnya sangat penting untuk fungsi otak dan juga mengobati gangguan saraf. Sedangkan superoksida menghilangkan radikal bebas dari tubuh yang meliputi jalur saraf. Melinjo baik juga untuk kesehatan dan pertumbuhan. Sangat penting untuk mencegah sistem kerangka, kardiovaskular, dan saraf. Baik untuk pertumbuhan jaringan dan organ yang sehat.",
+            "Jual",
+            "Jenis mangga yang berasal dari Jawa Timur, lebih tepatnya berasal dari wilayah Probolinggo. Buah Mangga Manalagi memiliki ukuran yang kecil dan sedang dengan kulit luar yang berwarna hijau dan tebal.Jika diperhatikan dengan seksama, maka Anda akan mendapatkan bahwa Mangga ini memiliki bintik-bintik putih yang lebih banyak dibandingkan dengan jenis mangga yang lain.\n\n",
+            "Tubuh Anda sangat membutuhkan Antioksidan untuk menjaga sistem imun agar tidak mudah terserang penyakit. Mangga Manalagi memiliki kandungan Vitamin C yang sangat tinggi dan bisa memberi manfaat harian bagi tubuh. Vitamin C yang terkandung di dalamnya sangat bermanfaat untuk mentralkan radikal bebas pada tubuh dan meningkatkan sistem imunitas.",
             User(
                 8,
                 "Siti Maryam Ulfah",
@@ -171,8 +170,8 @@ object FeedsData {
         ),
         Feed(
             9,
-            "Ubi enak manis harga murah, bisa cod, termurah, terpercaya. minat hubungi 08237737732\nBisa COD lur.",
-            "https://i.postimg.cc/WpGKxfrb/ubi9.jpg",
+            "Wrotel Import Enak enak manis harga murah, bisa cod, termurah, terpercaya. minat hubungi 08237737732\nBisa COD lur.",
+            "https://i.postimg.cc/vHQVj5pp/veg-wortel.jpg",
             "Ciawi - Rp.1500/Kg",
             "1 tahun yang lalu",
             "Jual",
@@ -187,8 +186,8 @@ object FeedsData {
         ),
         Feed(
             10,
-            "Ubi Jalar dengan kualitas terbaik.",
-            "https://i.postimg.cc/MTR469F5/ubi10.jpg",
+            "Paprika dengan kualitas terbaik.",
+            "https://i.postimg.cc/1RBB7R85/veg-pap.jpg",
             "Megamendung - Rp.7000/Kg",
             "1 tahun yang lalu",
             "Beli",
