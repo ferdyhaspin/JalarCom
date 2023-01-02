@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Divider
+import androidx.compose.material.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -13,9 +14,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import coil.compose.AsyncImage
@@ -33,6 +37,7 @@ import org.ferdyhaspin.jalarcom.ui.component.SectionItem
 import org.ferdyhaspin.jalarcom.ui.component.TopFeed
 import org.ferdyhaspin.jalarcom.ui.navigation.Screen
 import org.ferdyhaspin.jalarcom.ui.theme.JalarComTheme
+import org.ferdyhaspin.jalarcom.ui.theme.Purple700
 
 /**
  * Created by ferdyhaspin on 30/12/22.
@@ -123,6 +128,42 @@ fun FeedContent(
         TopFeed(feed = feed)
         Divider()
         BottomFeed(feed = feed, showDetail = true)
+        Divider()
+        FeedDescription(feed = feed, modifier)
+    }
+}
+
+@Composable
+fun FeedDescription(
+    feed: Feed,
+    modifier: Modifier = Modifier
+) {
+    Column(modifier = modifier.padding(20.dp)) {
+        Text(
+            text = "Tau Gak Sih?",
+            fontSize = 18.sp,
+            color = Purple700,
+            fontWeight = FontWeight.Light,
+            fontStyle = FontStyle.Italic,
+        )
+        Spacer(modifier = modifier.height(4.dp))
+        Text(
+            text = feed.desc,
+            fontSize = 12.sp
+        )
+        Spacer(modifier = modifier.height(16.dp))
+        Text(
+            text = "Manfaatnya Apa Sih?",
+            fontSize = 18.sp,
+            color = Purple700,
+            fontWeight = FontWeight.Light,
+            fontStyle = FontStyle.Italic,
+        )
+        Spacer(modifier = modifier.height(4.dp))
+        Text(
+            text = feed.benefit,
+            fontSize = 12.sp
+        )
     }
 }
 
